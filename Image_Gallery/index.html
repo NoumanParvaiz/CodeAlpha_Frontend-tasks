@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Image Gallery</h1>
+
+    <!-- Bonus: Categories -->
+    <div class="filter-buttons">
+      <button class="active" onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('city')">City</button>
+      <button onclick="filterImages('animals')">Animals</button>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-item nature">
+        <img src="https://picsum.photos/id/1018/400/300" alt="Nature 1" onclick="openLightbox(0)">
+      </div>
+      <div class="gallery-item city">
+        <img src="https://picsum.photos/id/1015/400/300" alt="City 1" onclick="openLightbox(1)">
+      </div>
+      <div class="gallery-item animals">
+        <img src="https://picsum.photos/id/1025/400/300" alt="Animal 1" onclick="openLightbox(2)">
+      </div>
+      <div class="gallery-item nature">
+        <img src="https://picsum.photos/id/1039/400/300" alt="Nature 2" onclick="openLightbox(3)">
+      </div>
+      <div class="gallery-item city">
+        <img src="https://picsum.photos/id/1043/400/300" alt="City 2" onclick="openLightbox(4)">
+      </div>
+      <div class="gallery-item animals">
+        <img src="https://picsum.photos/id/1074/400/300" alt="Animal 2" onclick="openLightbox(5)">
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <img id="lightbox-img" src="" alt="Preview">
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
