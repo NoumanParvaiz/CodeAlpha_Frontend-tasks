@@ -3,8 +3,6 @@
 
 This repository contains 3 frontend development tasks completed during my internship.
 
-## Tasks
-
 - Task 1 -> image Gallery
 - Task 2 -> Calculator
 - Task 3 -> Portfolio
